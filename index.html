@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coordination Compounds - KCET & NEET Study Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=twDaLpqDqmpT0Mz30d02rmyCZCnSOzcCJWHKhSDqb_a7CK2GIHgmrHINfhfVA0pXZjy_C82k1Guu_45O1jtqmc9JhUk5Kv0k9bJhgNglRtg4O4nCoIeoX-b-N-rY4jd8vfgc4pA6_yvFjrX2ZdcqIghMYNwFVF1jKC3JOYG_hrvq1Tw7F9e9nZDQ1w9evSCmD7zsHI-ziaRU9c4Ncb691JhMCEeh4a3JJaQanxS-sw0o50uOb4kdRVjr1gb3yEQ-B_E0kZehQco74QE3wdHIXfSbgFzQ-T69PGA50xPoQCLu7tR7VETZTSg-J-CakpmxWJ6B378hYh4i7-4kbfB_EUUBNcjJC0ohco0i9e8-LFPU4BAqBdewVPIgCUYBcARo" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jb250cmlidXRpb24udXNlcmNvbnRlbnQuZ29vZ2xlLmNvbS9kb3dubG9hZD9jPUNneGlZWEprWDNOMGIzSmhaMlVTVUJJTmNtVnpjRzl1YzJWZlpHRjBZUm9fQ2pBd05qUm1NVFkzTmpRMk1XUXhORE5tTURBd05qVm1aREpsTXpBMU9HUXhNakEwTmpZeE9ETmxZV1l4Wm1NeVkyVVNDeElIRUk3NzNmS3BDUmdCJmZpbGVuYW1lPWNoYXB0ZXI1X2Nvb3JkaW5hdGlvbl9jb21wb3VuZHNfa2NldF9uZWV0X3N0dWR5X3BvcnRhbC5odG1sJm9waT0xMDMxMzUwNTA"/><style>
+    :root {
+      --bg: #f8fafc;
+      --card-bg: #ffffff;
+      --border: #e2e8f0;
+      --border-focus: #3b82f6;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --primary: #4338ca;
+      --kcet-accent: #ea580c;
+      --neet-accent: #059669;
+      --tag-bg: #f1f5f9;
+      --correct-bg: #ecfdf5;
+      --correct-border: #10b981;
+      --correct-text: #065f46;
+      --wrong-bg: #fef2f2;
+      --wrong-border: #ef4444;
+      --wrong-text: #991b1b;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text-main);
+      line-height: 1.5;
+      padding-bottom: 80px;
+    }
+
+    /* Top Global Header */
+    header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .header-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-avatar {
+      background: #1e1b4b;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 7px 11px;
+      border-radius: 8px;
+      letter-spacing: 0.5px;
+    }
+    .brand-text h1 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+    .brand-text p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .top-nav {
+      display: flex;
+      gap: 6px;
+    }
+    .top-nav-btn {
+      background: transparent;
+      border: 1px solid transparent;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.15s ease;
+    }
+    .top-nav-btn:hover {
+      color: var(--text-main);
+      background: #f1f5f9;
+    }
+    .top-nav-btn.active {
+      color: var(--kcet-accent);
+      background: #fff7ed;
+      border-color: #fdba74;
+      font-weight: 600;
+    }
+
+    /* Container */
+    .container {
+      max-width: 1100px;
+      margin: 24px auto;
+      padding: 0 20px;
+    }
+
+    /* Back link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 12px;
+      color: #64748b;
+      text-decoration: none;
+      margin-bottom: 12px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+    .back-link:hover { color: #1e293b; }
+
+    /* Page Header Card */
+    .bank-header-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .bank-title {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .bank-subtitle {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin-bottom: 18px;
+    }
+
+    /* Action bar */
+    .action-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .btn-tool {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      color: #334155;
+      padding: 7px 15px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.15s ease;
+    }
+    .btn-tool:hover {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+    .btn-tool.active {
+      background: #0f172a;
+      color: #ffffff;
+      border-color: #0f172a;
+    }
+    .btn-tool.btn-print {
+      background: #0f172a;
+      color: #ffffff;
+      margin-left: auto;
+    }
+    .btn-tool.btn-print:hover {
+      background: #334155;
+    }
+
+    /* Filter & Search Bar */
+    .filter-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 24px;
+    }
+    .search-input-wrap {
+      margin-bottom: 14px;
+    }
+    .search-input {
+      width: 100%;
+      padding: 10px 14px;
+      font-size: 13px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+      background: #f8fafc;
+      transition: border-color 0.15s;
+    }
+    .search-input:focus {
+      border-color: var(--border-focus);
+      background: #ffffff;
+    }
+
+    .pill-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .pill {
+      background: #f1f5f9;
+      border: 1px solid #e2e8f0;
+      color: #475569;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .pill:hover {
+      background: #e2e8f0;
+    }
+    .pill.active {
+      background: #ea580c;
+      color: #ffffff;
+      border-color: #ea580c;
+    }
+    .pill.active-neet {
+      background: #059669;
+      color: #ffffff;
+      border-color: #059669;
+    }
+
+    /* Question Cards */
+    .q-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+      transition: border-color 0.15s;
+    }
+    .q-card:hover {
+      border-color: #cbd5e1;
+    }
+    .q-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+    .q-id-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .q-num-box {
+      background: #ea580c;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 11px;
+      padding: 2px 7px;
+      border-radius: 4px;
+    }
+    .q-num-box.neet-bg {
+      background: #059669;
+    }
+    .q-exam-year {
+      font-weight: 600;
+      font-size: 13px;
+      color: #1e293b;
+    }
+    .q-topic-tag {
+      font-size: 12px;
+      font-weight: 500;
+      color: #ea580c;
+    }
+    .q-topic-tag.neet-tag {
+      color: #059669;
+    }
+
+    .q-text {
+      font-size: 14.5px;
+      font-weight: 600;
+      color: #0f172a;
+      line-height: 1.55;
+      margin-bottom: 16px;
+      white-space: pre-line;
+    }
+
+    /* Options */
+    .options-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .option-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 13.5px;
+      color: #334155;
+      cursor: pointer;
+      transition: all 0.15s;
+      background: #ffffff;
+    }
+    .option-item:hover {
+      background: #f8fafc;
+      border-color: #cbd5e1;
+    }
+    .opt-letter {
+      width: 22px;
+      height: 22px;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: #475569;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 11px;
+      flex-shrink: 0;
+    }
+
+    /* Highlight states for Document View & Practice Quiz */
+    .option-item.show-correct {
+      background: var(--correct-bg);
+      border-color: var(--correct-border);
+      color: var(--correct-text);
+      font-weight: 600;
+    }
+    .option-item.show-correct .opt-letter {
+      background: #10b981;
+      color: #ffffff;
+    }
+    .option-item.selected-wrong {
+      background: var(--wrong-bg);
+      border-color: var(--wrong-border);
+      color: var(--wrong-text);
+      font-weight: 600;
+    }
+    .option-item.selected-wrong .opt-letter {
+      background: #ef4444;
+      color: #ffffff;
+    }
+
+    /* Solution Box */
+    .solution-box {
+      background: #f8fafc;
+      border-top: 1px solid var(--border);
+      border-radius: 0 0 8px 8px;
+      padding: 14px 16px;
+      margin-top: 12px;
+      font-size: 13px;
+      line-height: 1.55;
+      color: #475569;
+    }
+    .sol-header {
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 4px;
+    }
+    .sol-text {
+      color: #334155;
+    }
+
+    /* Home View Cards */
+    .home-hero {
+      background: linear-gradient(135deg, #1e1b4b 0%, #312e81 100%);
+      color: #ffffff;
+      border-radius: 16px;
+      padding: 36px 32px;
+      margin-bottom: 24px;
+    }
+    .home-hero h2 {
+      font-size: 26px;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+    .home-hero p {
+      font-size: 14px;
+      color: #cbd5e1;
+      line-height: 1.6;
+      max-width: 800px;
+      margin-bottom: 20px;
+    }
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .stat-box {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+    }
+    .stat-title {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+    }
+    .stat-val {
+      font-size: 24px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+    .stat-sub {
+      font-size: 12px;
+      color: #64748b;
+    }
+
+    /* Modules grid */
+    .modules-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+    }
+    .module-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.15s;
+    }
+    .module-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-color: #cbd5e1;
+    }
+    .mod-badge {
+      font-size: 11px;
+      font-weight: 600;
+      padding: 3px 8px;
+      border-radius: 4px;
+      background: #f1f5f9;
+      color: #475569;
+    }
+    .module-card h3 {
+      font-size: 17px;
+      font-weight: 700;
+      margin: 10px 0 6px 0;
+      color: #0f172a;
+    }
+    .module-card p {
+      font-size: 13px;
+      color: #64748b;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    .mod-btn {
+      padding: 9px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+    }
+    .mod-btn-kcet { background: #ea580c; color: white; }
+    .mod-btn-kcet:hover { background: #c2410c; }
+    .mod-btn-neet { background: #059669; color: white; }
+    .mod-btn-neet:hover { background: #047857; }
+    .mod-btn-notes { background: #3b82f6; color: white; }
+    .mod-btn-notes:hover { background: #2563eb; }
+
+    /* Revision Notes Table */
+    .notes-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+      font-size: 13.5px;
+    }
+    .notes-table th, .notes-table td {
+      border: 1px solid #e2e8f0;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    .notes-table th {
+      background: #f8fafc;
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    /* Print styles */
+    @media print {
+      header, .top-nav, .action-toolbar, .filter-card, .back-link { display: none !important; }
+      body { background: white; color: black; font-size: 12pt; }
+      .container { max-width: 100%; margin: 0; padding: 0; }
+      .q-card { border: 1px solid #ddd; break-inside: avoid; margin-bottom: 14px; }
+      .solution-box { display: block !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Global Header -->
+  <header>
+    <div class="header-inner">
+      <div class="brand-wrap">
+        <div class="brand-avatar">CC</div>
+        <div class="brand-text">
+          <h1>Coordination Compounds Study Portal</h1>
+          <p>KCET & NEET PYQ Question Banks • Complete Aligned Repository</p>
+        </div>
+      </div>
+      <div class="top-nav">
+        <button class="top-nav-btn" id="nav-home" onclick="showTab('home')">Home Portal</button>
+        <button class="top-nav-btn active" id="nav-kcet" onclick="showTab('kcet')">KCET Bank (20)</button>
+        <button class="top-nav-btn" id="nav-neet" onclick="showTab('neet')">NEET PYQ Bank (25)</button>
+        <button class="top-nav-btn" id="nav-notes" onclick="showTab('notes')">Revision Notes</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+
+    <!-- TAB 1: HOME PORTAL -->
+    <div id="view-home" style="display: none;">
+      <div class="home-hero">
+        <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.8px; background: rgba(255,255,255,0.15); padding: 4px 10px; border-radius: 6px; font-weight: 600;">Complete Chemistry Exam Prep • NCERT Class 12 Chapter 5</span>
+        <h2 style="margin-top: 10px;">Coordination Compounds: KCET & NEET PYQ Master Portal</h2>
+        <p>Comprehensive 45-question preparation repository featuring authentic KCET (2014–2026) and NEET/AIPMT (2000–2026) papers. Features Werner's theory valencies, IUPAC nomenclature, geometric (cis/trans, fac/mer) & optical isomerism, VBT magnetic moments, Crystal Field Theory (&Delta;o vs P, spectrochemical series), synergic bonding in metal carbonyls, and high-yield NCERT notes.</p>
+        <div style="display: flex; gap: 10px;">
+          <button class="mod-btn mod-btn-kcet" style="width: auto; padding: 9px 20px;" onclick="showTab('kcet')">Open KCET Bank (20 Qs)</button>
+          <button class="mod-btn mod-btn-neet" style="width: auto; padding: 9px 20px;" onclick="showTab('neet')">Open NEET PYQ Bank (25 Qs)</button>
+          <button class="mod-btn mod-btn-notes" style="width: auto; padding: 9px 20px;" onclick="showTab('notes')">View Revision Notes</button>
+        </div>
+      </div>
+
+      <div class="stats-row">
+        <div class="stat-box">
+          <div class="stat-title">Total Portal Bank</div>
+          <div class="stat-val">45 Questions</div>
+          <div class="stat-sub">20 KCET + 25 NEET items</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-title">KCET Coverage</div>
+          <div class="stat-val">2014 – 2026</div>
+          <div class="stat-sub">Includes 2026, 2025 papers</div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-title">NEET PYQ Coverage</div>
+          <div class="stat-val">2000 – 2026</div>
+          <div class="stat-sub">Includes 2026, 2025 papers</div>
+        </div>
+      </div>
+
+      <div class="modules-grid">
+        <div class="module-card">
+          <div>
+            <span class="mod-badge">Module 1 • Q1–Q20</span>
+            <h3>KCET Coordination Compounds Question Bank</h3>
+            <p>Covers spin-only magnetic moments (KCET 2026), AgNO3 precipitation conductance (KCET 2026/2025), facial and meridional isomerism, tetrahedral vs octahedral splitting ratio, Werner valencies, and IUPAC naming.</p>
+          </div>
+          <button class="mod-btn mod-btn-kcet" onclick="showTab('kcet')">Read Question Bank</button>
+        </div>
+
+        <div class="module-card">
+          <div>
+            <span class="mod-badge">Module 2 • Q1–Q25</span>
+            <h3>NEET PYQ Coordination Compounds Question Bank</h3>
+            <p>Includes NEET 2026 octahedral/tetrahedral CFSE statements, NEET 2026 homoleptic metal carbonyl C-O bond order & synergic bonding, 4-way isomerism matching (NEET 2025), spectrochemical series, and d-d transitions.</p>
+          </div>
+          <button class="mod-btn mod-btn-neet" onclick="showTab('neet')">Read Question Bank</button>
+        </div>
+
+        <div class="module-card">
+          <div>
+            <span class="mod-badge">Module 3 • Quick Reference</span>
+            <h3>High-Yield NCERT Revision Tables</h3>
+            <p>Tabular comparisons of Octahedral vs Tetrahedral CFSE (&Delta;t = 4/9 &Delta;o), complete Spectrochemical Series sequence, VBT hybridisations, and biological chelate functions.</p>
+          </div>
+          <button class="mod-btn mod-btn-notes" onclick="showTab('notes')">View Revision Tables</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB 2: KCET BANK VIEW -->
+    <div id="view-kcet">
+      <a class="back-link" onclick="showTab('home')">&larr; Back to Home Portal</a>
+
+      <div class="bank-header-card">
+        <h2 class="bank-title">KCET Coordination Compounds Question Bank (20 Questions)</h2>
+        <p class="bank-subtitle">Karnataka CET Chemistry (2014–2026, including 2025 & 2026 authentic questions)</p>
+        
+        <div class="action-toolbar">
+          <button class="btn-tool active" id="kcet-mode-doc" onclick="setMode('kcet', 'doc')">Document View</button>
+          <button class="btn-tool" id="kcet-mode-quiz" onclick="setMode('kcet', 'quiz')">Practice Quiz</button>
+          <button class="btn-tool" id="kcet-toggle-ans" onclick="toggleAnswers('kcet')">Hide Answer Key</button>
+          <button class="btn-tool btn-print" onclick="window.print()">Print / Save PDF</button>
+        </div>
+      </div>
+
+      <div class="filter-card">
+        <div class="search-input-wrap">
+          <input type="text" class="search-input" id="kcet-search" placeholder="Search Werner, isomerism, magnetic moment, CFSE, IUPAC..." oninput="filterList('kcet')">
+        </div>
+        <div class="pill-list" id="kcet-pills">
+          <span class="pill active" onclick="filterCategory('kcet', 'All', this)">All</span>
+          <span class="pill" onclick="filterCategory('kcet', 'Magnetic Properties & Spin-Only Moment', this)">Magnetic Properties & Spin-Only Moment</span>
+          <span class="pill" onclick="filterCategory('kcet', 'Werner\'s Theory & Valencies', this)">Werner's Theory & Valencies</span>
+          <span class="pill" onclick="filterCategory('kcet', 'Isomerism & Stereochemistry', this)">Isomerism & Stereochemistry</span>
+          <span class="pill" onclick="filterCategory('kcet', 'Crystal Field Theory & Spectrochemical Series', this)">CFT & Spectrochemical Series</span>
+          <span class="pill" onclick="filterCategory('kcet', 'IUPAC Nomenclature & Ligands', this)">IUPAC & Ligands</span>
+        </div>
+      </div>
+
+      <div id="kcet-questions-list"></div>
+    </div>
+
+    <!-- TAB 3: NEET BANK VIEW -->
+    <div id="view-neet" style="display: none;">
+      <a class="back-link" onclick="showTab('home')">&larr; Back to Home Portal</a>
+
+      <div class="bank-header-card">
+        <h2 class="bank-title">NEET Coordination Compounds Question Bank (25 Questions)</h2>
+        <p class="bank-subtitle">National Eligibility cum Entrance Test / AIPMT (2000–2026, including 2025 & 2026)</p>
+        
+        <div class="action-toolbar">
+          <button class="btn-tool active" id="neet-mode-doc" onclick="setMode('neet', 'doc')">Document View</button>
+          <button class="btn-tool" id="neet-mode-quiz" onclick="setMode('neet', 'quiz')">Practice Quiz</button>
+          <button class="btn-tool" id="neet-toggle-ans" onclick="toggleAnswers('neet')">Hide Answer Key</button>
+          <button class="btn-tool btn-print" onclick="window.print()">Print / Save PDF</button>
+        </div>
+      </div>
+
+      <div class="filter-card">
+        <div class="search-input-wrap">
+          <input type="text" class="search-input" id="neet-search" placeholder="Search CFSE, synergic bonding, spectrochemical, isomerism..." oninput="filterList('neet')">
+        </div>
+        <div class="pill-list" id="neet-pills">
+          <span class="pill active-neet" onclick="filterCategory('neet', 'All', this)">All</span>
+          <span class="pill" onclick="filterCategory('neet', 'Crystal Field Theory & CFSE', this)">Crystal Field Theory & CFSE</span>
+          <span class="pill" onclick="filterCategory('neet', 'Metal Carbonyls & Synergic Bonding', this)">Metal Carbonyls & Synergic Bonding</span>
+          <span class="pill" onclick="filterCategory('neet', 'Isomerism in Coordination Compounds', this)">Isomerism in Complexes</span>
+          <span class="pill" onclick="filterCategory('neet', 'Valence Bond Theory & Magnetic Nature', this)">VBT & Magnetism</span>
+          <span class="pill" onclick="filterCategory('neet', 'Nomenclature & Biological Applications', this)">Nomenclature & Applications</span>
+        </div>
+      </div>
+
+      <div id="neet-questions-list"></div>
+    </div>
+
+    <!-- TAB 4: REVISION NOTES VIEW -->
+    <div id="view-notes" style="display: none;">
+      <a class="back-link" onclick="showTab('home')">&larr; Back to Home Portal</a>
+
+      <div class="bank-header-card">
+        <h2 class="bank-title">High-Yield Revision Notes: Coordination Compounds</h2>
+        <p class="bank-subtitle">NCERT Class 12 Unit 5 Core Concept Summaries, Tables & Formulae</p>
+      </div>
+
+      <div class="bank-header-card" style="margin-bottom: 20px;">
+        <h3 style="font-size: 16px; margin-bottom: 8px; color: #1e1b4b;">1. Spectrochemical Series (Order of Increasing Field Strength)</h3>
+        <p style="font-family: 'JetBrains Mono', monospace; color: #0284c7; background: #f0f9ff; padding: 10px 14px; border-radius: 6px; font-size: 13px; margin-bottom: 12px; line-height: 1.8;">
+          I<sup>-</sup> &lt; Br<sup>-</sup> &lt; SCN<sup>-</sup> &lt; Cl<sup>-</sup> &lt; S<sup>2-</sup> &lt; F<sup>-</sup> &lt; OH<sup>-</sup> &lt; C<sub>2</sub>O<sub>4</sub><sup>2-</sup> &lt; H<sub>2</sub>O &lt; NCS<sup>-</sup> &lt; edta<sup>4-</sup> &lt; NH<sub>3</sub> &lt; en &lt; CN<sup>-</sup> &lt; CO
+        </p>
+        <table class="notes-table">
+          <thead>
+            <tr>
+              <th>Condition</th>
+              <th>Ligand Type</th>
+              <th>Octahedral d<sup>4</sup> Configuration</th>
+              <th>Spin State</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>&Delta;o &lt; P</strong></td>
+              <td>Weak field (e.g. F<sup>-</sup>, Cl<sup>-</sup>, H<sub>2</sub>O)</td>
+              <td>t<sub>2g</sub><sup>3</sup> e<sub>g</sub><sup>1</sup></td>
+              <td>High Spin (Spin-free)</td>
+            </tr>
+            <tr>
+              <td><strong>&Delta;o &gt; P</strong></td>
+              <td>Strong field (e.g. CN<sup>-</sup>, CO, en, NH<sub>3</sub>)</td>
+              <td>t<sub>2g</sub><sup>4</sup> e<sub>g</sub><sup>0</sup></td>
+              <td>Low Spin (Spin-paired)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bank-header-card" style="margin-bottom: 20px;">
+        <h3 style="font-size: 16px; margin-bottom: 8px; color: #1e1b4b;">2. Octahedral vs. Tetrahedral Crystal Field Splitting</h3>
+        <table class="notes-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Octahedral Field (&Delta;o)</th>
+              <th>Tetrahedral Field (&Delta;t)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Splitting Magnitude</strong></td>
+              <td>Standard reference (&Delta;o)</td>
+              <td><strong>&Delta;t = (4/9) &Delta;o</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Splitting Pattern</strong></td>
+              <td>Upper: e<sub>g</sub> (+0.6 &Delta;o)<br>Lower: t<sub>2g</sub> (-0.4 &Delta;o)</td>
+              <td>Upper: t<sub>2</sub> (+0.4 &Delta;t)<br>Lower: e (-0.6 &Delta;t)</td>
+            </tr>
+            <tr>
+              <td><strong>Complex Spin Type</strong></td>
+              <td>Both High-spin and Low-spin depending on ligand</td>
+              <td><strong>Almost exclusively High-spin</strong> (&Delta;t &lt; P)</td>
+            </tr>
+            <tr>
+              <td><strong>Centrosymmetric 'g' Tag</strong></td>
+              <td>Used (t<sub>2g</sub>, e<sub>g</sub>) due to centre of symmetry</td>
+              <td>Not used (e, t<sub>2</sub>) because tetrahedral lacks inversion centre</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bank-header-card">
+        <h3 style="font-size: 16px; margin-bottom: 8px; color: #1e1b4b;">3. Synergic Bonding in Metal Carbonyls</h3>
+        <ul style="padding-left: 20px; font-size: 13.5px; color: #334155; line-height: 1.8;">
+          <li><strong>M &larr; C &sigma;-bond:</strong> Formed by donation of lone pair on carbon monoxide into a vacant metal d-orbital.</li>
+          <li><strong>M &rarr; C &pi;-backbond:</strong> Formed by donation of d-electrons from filled metal d-orbital into empty antibonding &pi;* orbital of CO.</li>
+          <li><strong>Synergic Effect:</strong> Backbonding into &pi;* orbital strengthens the M-C bond while weakening and elongating the C-O bond.</li>
+          <li><strong>C-O Bond Order Ranking:</strong> Greater negative charge on complex &rarr; greater back-donation &rarr; weakest/longest C-O bond: <br><span style="font-family:'JetBrains Mono';">[V(CO)<sub>6</sub>]<sup>-</sup> &lt; [Cr(CO)<sub>6</sub>] &lt; [Mn(CO)<sub>6</sub>]<sup>+</sup></span>.</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    const kcetData = [{"id": "k1", "exam": "KCET 2026", "topic": "Magnetic Properties & Spin-Only Moment", "text": "The calculated spin-only magnetic moments of [Fe(H2O)6]2+ and [Fe(CN)6]4- in Bohr Magnetons (BM) are respectively:", "options": ["4.90 BM and 0 BM", "5.92 BM and 1.73 BM", "0 BM and 4.90 BM", "2.84 BM and 0 BM"], "correct": 0, "explanation": "In both complex ions, iron is in +2 oxidation state (3d6). H2O is a weak field ligand (\u0394o < P), leading to configuration t2g^4 eg^2 with n = 4 unpaired electrons: \u03bc = \u221a(4 \u00d7 6) = \u221a24 \u2248 4.90 BM. In [Fe(CN)6]4-, CN- is a strong field ligand (\u0394o > P), forcing pairing into t2g^6 eg^0 with n = 0 unpaired electrons: \u03bc = 0 BM."}, {"id": "k2", "exam": "KCET 2026", "topic": "Werner's Theory & Valencies", "text": "When 0.1 mol of CoCl3\u00b75NH3 is treated with excess aqueous AgNO3 solution in cold, the number of moles of AgCl precipitated is:", "options": ["0.1 mol", "0.2 mol", "0.3 mol", "0.0 mol"], "correct": 1, "explanation": "According to Werner's coordination theory, CoCl3\u00b75NH3 is formulated as [CoCl(NH3)5]Cl2. Only the two chloride ions present in the outer ionisation sphere are ionisable: 0.1 mol of complex precipitates 2 \u00d7 0.1 = 0.2 mol of AgCl."}, {"id": "k3", "exam": "KCET 2025", "topic": "Isomerism & Stereochemistry", "text": "Facial (fac) and meridional (mer) isomerism is typically shown by octahedral coordination complexes of the type:", "options": ["[Ma4b2]", "[Ma3b3]", "[M(AA)3]", "[Ma2b4]"], "correct": 1, "explanation": "Octahedral complexes of the type [Ma3b3] (such as [Co(NH3)3(NO2)3]) exhibit facial (fac) and meridional (mer) geometric isomerism. In the fac-isomer, three identical donor atoms occupy the corners of one octahedral triangular face; in the mer-isomer, they lie around a meridian."}, {"id": "k4", "exam": "KCET 2025", "topic": "Crystal Field Theory & Spectrochemical Series", "text": "For a given transition metal ion and ligands, the crystal field splitting in a tetrahedral field (\u0394t) is related to that in an octahedral field (\u0394o) as:", "options": ["\u0394t = (9/4) \u0394o", "\u0394t = (4/9) \u0394o", "\u0394t = (1/2) \u0394o", "\u0394t = (2/3) \u0394o"], "correct": 1, "explanation": "Because there are only 4 ligands in tetrahedral coordination instead of 6, and none point directly along the Cartesian axes, crystal field splitting is significantly smaller: \u0394t = (4/9) \u0394o."}, {"id": "k5", "exam": "KCET 2024", "topic": "Isomerism & Stereochemistry", "text": "Which of the following coordination entities is chiral and therefore exhibits optical isomerism?", "options": ["trans-[CoCl2(en)2]+", "cis-[CoCl2(en)2]+", "[Co(NH3)4Cl2]+", "trans-[Pt(NH3)2Cl2]"], "correct": 1, "explanation": "trans-[CoCl2(en)2]+ possesses a plane of symmetry and an inversion centre (achiral). cis-[CoCl2(en)2]+ has no plane of symmetry and is non-superimposable on its mirror image, displaying d- and l-optical isomers."}, {"id": "k6", "exam": "KCET 2024", "topic": "Magnetic Properties & Spin-Only Moment", "text": "The geometry and magnetic behaviour of the complex ion [Ni(CN)4]2- are respectively:", "options": ["Tetrahedral, paramagnetic", "Square planar, diamagnetic", "Square planar, paramagnetic", "Tetrahedral, diamagnetic"], "correct": 1, "explanation": "In [Ni(CN)4]2-, Ni is in +2 oxidation state (3d8). Strong field ligand CN- forces pairing of the two unpaired 3d electrons, making one 3d orbital available for dsp2 hybridisation. The resulting complex is square planar and diamagnetic."}, {"id": "k7", "exam": "KCET 2023", "topic": "Werner's Theory & Valencies", "text": "The primary and secondary valencies of cobalt in the complex [Co(en)2Cl2]Cl are respectively:", "options": ["3 and 6", "3 and 4", "2 and 6", "1 and 6"], "correct": 0, "explanation": "Primary valency equals the oxidation state of Co: x + 2(0) + 2(-1) + (-1) = 0 => x = +3. Secondary valency equals the coordination number: two didentate 'en' ligands (2 \u00d7 2 = 4) + two chloride ligands (2) = 6."}, {"id": "k8", "exam": "KCET 2023", "topic": "Isomerism & Stereochemistry", "text": "The type of isomerism shown by the pair [Co(NH3)5(SO4)]Br and [Co(NH3)5Br]SO4 is:", "options": ["Linkage isomerism", "Coordination isomerism", "Ionisation isomerism", "Solvate isomerism"], "correct": 2, "explanation": "Ionisation isomerism arises when the counter ion displaces a ligand inside the coordination sphere, giving different ions in aqueous solution (one yields Br- test with AgNO3, the other SO4^2- test with BaCl2)."}, {"id": "k9", "exam": "KCET 2022", "topic": "Magnetic Properties & Spin-Only Moment", "text": "Which of the following octahedral complexes is an outer orbital (high-spin) complex?", "options": ["[Co(NH3)6]3+", "[Co(CN)6]3-", "[CoF6]3-", "[Fe(CN)6]4-"], "correct": 2, "explanation": "In [CoF6]3-, F- is a weak field ligand. Co3+ (3d6) does not pair its electrons and uses outer 4d orbitals to achieve sp3d2 hybridisation. It has 4 unpaired electrons and is an outer orbital, high spin complex."}, {"id": "k10", "exam": "KCET 2022", "topic": "Crystal Field Theory & Spectrochemical Series", "text": "A coordination complex [Ti(H2O)6]3+ is violet in colour. When heated, water ligands are lost and it becomes colourless. This demonstrates that:", "options": ["Colour is due to metal-metal bonding", "Crystal field splitting and d-d transitions require the presence of ligands", "Water is an intrinsically purple liquid", "Titanium oxidises to Ti4+"], "correct": 1, "explanation": "In [Ti(H2O)6]3+, the single d-electron undergoes a d-d transition from t2g to eg by absorbing blue-green light. When anhydrous, crystal field splitting is absent, d-orbitals remain degenerate, and no d-d transition can occur."}, {"id": "k11", "exam": "KCET 2021", "topic": "IUPAC Nomenclature & Ligands", "text": "Which of the following ligands is an ambidentate ligand capable of coordinating through two different donor atoms?", "options": ["C2O4^2-", "en", "NO2^-", "EDTA^4-"], "correct": 2, "explanation": "Ambidentate ligands have two donor atoms: NO2^- coordinates either through nitrogen (nitrito-N) or through oxygen (nitrito-O). SCN- is another common ambidentate ligand."}, {"id": "k12", "exam": "KCET 2021", "topic": "Werner's Theory & Valencies", "text": "Which of the following pairs represents a double salt and a coordination complex respectively?", "options": ["Carnallite and Mohr's salt", "Mohr's salt and Potassium ferrocyanide", "Potassium ferricyanide and Tetraamminecopper(II) sulphate", "Potash alum and Carnallite"], "correct": 1, "explanation": "Mohr's salt (FeSO4\u00b7(NH4)2SO4\u00b76H2O) is a double salt that dissociates completely into simple ions. Potassium ferrocyanide (K4[Fe(CN)6]) is a coordination complex whose [Fe(CN)6]4- entity remains intact in solution."}, {"id": "k13", "exam": "KCET 2020", "topic": "IUPAC Nomenclature & Ligands", "text": "The systematic IUPAC name of the complex K3[Al(C2O4)3] is:", "options": ["Potassium trioxalatoaluminate(III)", "Potassium trioxalatealuminium(III)", "Tripotassium trioxalatoaluminate(III)", "Potassium tris(oxalato)aluminium(III)"], "correct": 0, "explanation": "The cation potassium is named first. The ligand C2O4^2- is oxalato. In an anionic entity, aluminium takes the suffix '-ate' (aluminate). Oxidation state is +3: Potassium trioxalatoaluminate(III)."}, {"id": "k14", "exam": "KCET 2019", "topic": "Crystal Field Theory & Spectrochemical Series", "text": "Which of the following represents the correct arrangement of ligands in order of increasing field strength in the spectrochemical series?", "options": ["Cl- < F- < H2O < NH3 < CN-", "CN- < NH3 < H2O < F- < Cl-", "F- < Cl- < H2O < CN- < NH3", "H2O < F- < Cl- < NH3 < CN-"], "correct": 0, "explanation": "According to the NCERT spectrochemical series: I- < Br- < SCN- < Cl- < S2- < F- < OH- < C2O4^2- < H2O < NCS- < edta^4- < NH3 < en < CN- < CO. Hence Cl- < F- < H2O < NH3 < CN-."}, {"id": "k15", "exam": "KCET 2018", "topic": "Magnetic Properties & Spin-Only Moment", "text": "The complex [Ni(CO)4] is diamagnetic while [NiCl4]2- is paramagnetic. This is because:", "options": ["CO is a strong field ligand causing pairing of electrons; Cl- is weak and does not cause pairing", "Ni is in +2 state in [Ni(CO)4] and 0 in [NiCl4]2-", "[Ni(CO)4] is square planar and [NiCl4]2- is tetrahedral", "Cl- causes electron transfer to 4s orbital"], "correct": 0, "explanation": "In [Ni(CO)4], Ni is in zero oxidation state (3d8 4s2). CO forces 4s electrons into 3d to yield 3d10 with sp3 hybridisation (diamagnetic). In [NiCl4]2-, Ni is +2 (3d8); Cl- is weak, leaving 2 unpaired electrons (paramagnetic)."}, {"id": "k16", "exam": "KCET 2017", "topic": "Isomerism & Stereochemistry", "text": "The number of geometrical isomers possible for the square planar complex [Pt(NH3)(Br)(Cl)(py)] is:", "options": ["2", "3", "4", "6"], "correct": 1, "explanation": "Square planar complexes of the type [Mabcd] with four different unidentate ligands form exactly 3 geometrical isomers (two cis and one trans with respect to any fixed ligand)."}, {"id": "k17", "exam": "KCET 2016", "topic": "IUPAC Nomenclature & Ligands", "text": "The denticity of ethylenediaminetetraacetate ion (EDTA4-) is:", "options": ["2", "4", "6", "8"], "correct": 2, "explanation": "EDTA4- binds to a central metal ion simultaneously through two nitrogen donor atoms and four carboxylate oxygen donor atoms, making it a hexadentate ligand (denticity = 6)."}, {"id": "k18", "exam": "KCET 2015", "topic": "Werner's Theory & Valencies", "text": "A 1:1 electrolytic conductometric behavior in aqueous solution is exhibited by which of the following cobalt complexes?", "options": ["[Co(NH3)6]Cl3", "[CoCl(NH3)5]Cl2", "[CoCl2(NH3)4]Cl", "[CoCl3(NH3)3]"], "correct": 2, "explanation": "[CoCl2(NH3)4]Cl dissociates into two ions: one complex cation [CoCl2(NH3)4]+ and one Cl- counter ion, corresponding to a 1:1 electrolyte."}, {"id": "k19", "exam": "KCET 2014", "topic": "IUPAC Nomenclature & Ligands", "text": "The oxidation state of cobalt in the complex [Co(H2O)(CN)(en)2]2+ is:", "options": ["+1", "+2", "+3", "+4"], "correct": 2, "explanation": "Let the oxidation state of Co be x. H2O is neutral (0), CN- has charge -1, and 'en' is neutral (0). The net charge on the entity is +2: x + 0 + (-1) + 2(0) = +2 => x = +3."}, {"id": "k20", "exam": "KCET 2014", "topic": "Isomerism & Stereochemistry", "text": "Which of the following compounds exhibits coordination isomerism?", "options": ["[Co(NH3)6][Cr(CN)6]", "[Co(NH3)5(NO2)]Cl2", "[Pt(NH3)2Cl2]", "[Cr(H2O)6]Cl3"], "correct": 0, "explanation": "Coordination isomerism occurs when both cation and anion are complex entities, allowing interchange of ligands: [Co(NH3)6][Cr(CN)6] and [Cr(NH3)6][Co(CN)6]."}];
+    const neetData = [{"id": "n1", "exam": "NEET 2026", "topic": "Crystal Field Theory & CFSE", "text": "Given below are two statements:\nStatement I: In an octahedral crystal field, the t2g orbitals are stabilized by (2/5)\u0394o relative to the barycentre, while the eg orbitals are destabilized by (3/5)\u0394o.\nStatement II: In a tetrahedral crystal field, the orbital splitting energy is so large that low-spin complexes are predominantly formed.\nIn light of the above statements, choose the correct answer:", "options": ["Both Statement I and Statement II are correct", "Both Statement I and Statement II are incorrect", "Statement I is correct but Statement II is incorrect", "Statement I is incorrect but Statement II is correct"], "correct": 2, "explanation": "Statement I is correct: in octahedral splitting, the three t2g orbitals lie 2/5 \u0394o (-0.4 \u0394o) below the spherical barycentre, and eg lies 3/5 \u0394o (+0.6 \u0394o) above it. Statement II is incorrect: because \u0394t = 4/9 \u0394o, the tetrahedral splitting is always much smaller than pairing energy (\u0394t < P); hence tetrahedral complexes are virtually always high-spin."}, {"id": "n2", "exam": "NEET 2026", "topic": "Metal Carbonyls & Synergic Bonding", "text": "Among the following homoleptic metal carbonyls, the C-O bond order is the lowest (longest C-O bond) in:", "options": ["[V(CO)6]-", "[Cr(CO)6]", "[Mn(CO)6]+", "[Fe(CO)5]"], "correct": 0, "explanation": "In [V(CO)6]-, the metal vanadium carries a negative oxidation state (-1), giving it the highest electron density. Increased electron density facilitates greatest metal-to-ligand \u03c0-backdonation into the empty \u03c0* antibonding orbital of CO. Electron density in \u03c0* weakens and elongates the C-O bond, giving it the lowest bond order."}, {"id": "n3", "exam": "NEET 2025", "topic": "Crystal Field Theory & CFSE", "text": "An octahedral complex [M(H2O)6]3+ has an electronic configuration of t2g^3 eg^1. Which of the following statements about this complex is correct?", "options": ["It is a d5 low spin complex", "It is a d4 high spin complex where \u0394o < P", "It is a d4 low spin complex where \u0394o > P", "It contains two unpaired electrons"], "correct": 1, "explanation": "The complex has 3 + 1 = 4 d-electrons (d4 system). Since the fourth electron occupies the higher-energy eg orbital instead of pairing up in the t2g level, pairing energy exceeds splitting energy (\u0394o < P). This corresponds to a high-spin d4 complex with 4 unpaired electrons."}, {"id": "n4", "exam": "NEET 2025", "topic": "Isomerism in Coordination Compounds", "text": "Match List-I with List-II:\nList-I (Complex Pair):\n(A) [Co(NH3)5(NO2)]Cl2 and [Co(NH3)5(ONO)]Cl2\n(B) [Co(NH3)6][Cr(CN)6] and [Cr(NH3)6][Co(CN)6]\n(C) [Co(NH3)5(SO4)]Br and [Co(NH3)5Br]SO4\n(D) [Cr(H2O)6]Cl3 and [Cr(H2O)5Cl]Cl2\u00b7H2O\nList-II (Type of Isomerism):\n(I) Coordination isomerism\n(II) Solvate / Hydrate isomerism\n(III) Linkage isomerism\n(IV) Ionisation isomerism\nChoose the correct match:", "options": ["A-III, B-I, C-IV, D-II", "A-III, B-IV, C-I, D-II", "A-I, B-III, C-IV, D-II", "A-IV, B-I, C-III, D-II"], "correct": 0, "explanation": "Pair (A) involves ambidentate NO2^- vs ONO^- => Linkage isomerism (III). Pair (B) involves interchange of ligands between cationic and anionic complexes => Coordination isomerism (I). Pair (C) involves exchange between ligand and counter ion => Ionisation isomerism (IV). Pair (D) involves water in crystal lattice => Solvate isomerism (II). Correct match: A-III, B-I, C-IV, D-II."}, {"id": "n5", "exam": "NEET 2024", "topic": "Crystal Field Theory & CFSE", "text": "The correct electronic configuration of central metal ion in [Fe(CN)6]3- on the basis of Crystal Field Theory is:", "options": ["t2g^4 eg^1", "t2g^5 eg^0", "t2g^3 eg^2", "t2g^6 eg^0"], "correct": 1, "explanation": "In [Fe(CN)6]3-, Fe is in +3 oxidation state (3d5). CN- is a strong field ligand, producing a large splitting where \u0394o > P. All 5 electrons enter the lower t2g set, resulting in the low-spin configuration t2g^5 eg^0 with 1 unpaired electron."}, {"id": "n6", "exam": "NEET 2024", "topic": "Nomenclature & Biological Applications", "text": "The platinum coordination compound used in cancer chemotherapy to inhibit tumour growth is:", "options": ["cis-[PtCl2(NH3)2] (cis-platin)", "trans-[PtCl2(NH3)2]", "[(Ph3P)3RhCl]", "K[PtCl3(C2H4)]"], "correct": 0, "explanation": "cis-Diamminedichloridoplatinum(II), known as cis-platin, is a coordination compound of platinum widely used as an antineoplastic agent in cancer chemotherapy. Its trans-isomer is clinically inactive."}, {"id": "n7", "exam": "NEET 2023", "topic": "Nomenclature & Biological Applications", "text": "Which of the following complexes is homoleptic?", "options": ["[Co(NH3)4Cl2]+", "[Co(NH3)6]3+", "[Pt(NH3)2Cl(NO2)]", "[Fe(NH3)4(H2O)2]2+"], "correct": 1, "explanation": "Homoleptic complexes are those in which the central metal atom/ion is bound to only one kind of donor ligand. [Co(NH3)6]3+ contains only ammonia ligands and is therefore homoleptic."}, {"id": "n8", "exam": "NEET 2023", "topic": "Crystal Field Theory & CFSE", "text": "Which one of the following metal ions forms an octahedral complex with the highest spin-only magnetic moment when coordinated to weak field ligands?", "options": ["Cr3+", "Mn2+", "Fe2+", "Co2+"], "correct": 1, "explanation": "Mn2+ is a 3d5 system. With weak field ligands (\u0394o < P), electrons occupy orbitals singly according to Hund's rule (t2g^3 eg^2), yielding 5 unpaired electrons and \u03bc = \u221a(5 \u00d7 7) = \u221a35 \u2248 5.92 BM, the maximum possible spin-only magnetic moment for 3d transition metals."}, {"id": "n9", "exam": "NEET 2022", "topic": "Werner's Theory & Valencies", "text": "How many ions are produced per formula unit in an aqueous solution of potassium trioxalatoferrate(III)?", "options": ["2", "3", "4", "5"], "correct": 2, "explanation": "The formula of potassium trioxalatoferrate(III) is K3[Fe(C2O4)3]. In aqueous solution, it ionises to give 3 K+ cations and 1 [Fe(C2O4)3]3- complex anion, producing a total of 4 ions per formula unit."}, {"id": "n10", "exam": "NEET 2022", "topic": "Crystal Field Theory & CFSE", "text": "The d-electron configuration of [Cr(H2O)6]3+ is:", "options": ["t2g^3 eg^0", "t2g^2 eg^1", "t2g^1 eg^2", "t2g^0 eg^3"], "correct": 0, "explanation": "Chromium is in +3 oxidation state (3d3). The three d-electrons occupy the lower-energy t2g orbitals singly with parallel spins: t2g^3 eg^0. The configuration is identical in both weak and strong crystal fields."}, {"id": "n11", "exam": "NEET 2021", "topic": "Nomenclature & Biological Applications", "text": "The IUPAC name of the complex [Ag(NH3)2][Ag(CN)2] is:", "options": ["Diamminesilver(I) dicyanidoargentate(I)", "Diamminesilver(II) dicyanidoargentate(II)", "Dicyanidoargentate(I) diamminesilver(I)", "Diammineargentate(I) dicyanidosilver(I)"], "correct": 0, "explanation": "The cationic entity is named first with normal metal name: diamminesilver(I). The anionic entity follows with Latin name ending in '-ate': dicyanidoargentate(I). Both silver atoms have +1 oxidation state."}, {"id": "n12", "exam": "NEET 2021", "topic": "Nomenclature & Biological Applications", "text": "The catalyst used in the homogeneous hydrogenation of alkenes is Wilkinson's catalyst, which has the formula:", "options": ["[(Ph3P)3RhCl]", "[Rh(CO)2I2]-", "[PdCl4]2-", "[Pt(NH3)2Cl2]"], "correct": 0, "explanation": "Wilkinson's catalyst is chloridotris(triphenylphosphine)rhodium(I), [(Ph3P)3RhCl], a square planar complex of rhodium(I) extensively used for catalytic hydrogenation of alkenes."}, {"id": "n13", "exam": "NEET 2020", "topic": "Crystal Field Theory & CFSE", "text": "What is the correct order of increasing field strength for the following ligands: SCN-, F-, CN-, C2O4^2-?", "options": ["SCN- < F- < C2O4^2- < CN-", "F- < SCN- < C2O4^2- < CN-", "SCN- < C2O4^2- < F- < CN-", "CN- < C2O4^2- < F- < SCN-"], "correct": 0, "explanation": "In the spectrochemical series: I- < Br- < SCN- < Cl- < S2- < F- < OH- < C2O4^2- < H2O < NCS- < edta^4- < NH3 < en < CN- < CO. Hence: SCN- < F- < C2O4^2- < CN-."}, {"id": "n14", "exam": "NEET 2019", "topic": "Valence Bond Theory & Magnetic Nature", "text": "The geometry and hybridization of [Ni(CO)4] and [Ni(CN)4]2- are respectively:", "options": ["Tetrahedral (sp3) and Square planar (dsp2)", "Square planar (dsp2) and Tetrahedral (sp3)", "Both Tetrahedral (sp3)", "Both Square planar (dsp2)"], "correct": 0, "explanation": "[Ni(CO)4] has Ni(0) (3d10) and is tetrahedral with sp3 hybridisation. [Ni(CN)4]2- has Ni(II) (3d8) with paired electrons and is square planar with dsp2 hybridisation."}, {"id": "n15", "exam": "NEET 2018", "topic": "Nomenclature & Biological Applications", "text": "Iron is the central metal atom in which of the following biologically important coordination compounds?", "options": ["Chlorophyll", "Haemoglobin", "Vitamin B12", "Carboxypeptidase A"], "correct": 1, "explanation": "Haemoglobin is a coordination complex of iron. Chlorophyll is a complex of magnesium; Vitamin B12 is a complex of cobalt; Carboxypeptidase A contains zinc."}, {"id": "n16", "exam": "NEET 2017", "topic": "Metal Carbonyls & Synergic Bonding", "text": "An example of a sigma-bonded organometallic complex among the following is:", "options": ["Grignard reagent (RMgX)", "Ferrocene", "Zeise's salt", "Ruthenocene"], "correct": 0, "explanation": "Grignard reagent (R-Mg-X) contains a direct carbon-metal sigma bond. Ferrocene and Zeise's salt are pi-complexes involving pi-electron donation to the metal."}, {"id": "n17", "exam": "NEET 2016", "topic": "Isomerism in Coordination Compounds", "text": "The number of geometrical isomers possible for the octahedral complex [Co(NH3)3Cl3] is:", "options": ["2", "3", "4", "0"], "correct": 0, "explanation": "The complex [Co(NH3)3Cl3] is of the [Ma3b3] type and exhibits 2 geometrical isomers: the facial (fac) isomer and the meridional (mer) isomer."}, {"id": "n18", "exam": "NEET 2015", "topic": "Crystal Field Theory & CFSE", "text": "Cobalt(III) ion forms an octahedral complex with a strong field ligand. What will be the number of unpaired electrons in the complex?", "options": ["0", "2", "4", "1"], "correct": 0, "explanation": "Cobalt(III) has a 3d6 electronic configuration. In the presence of a strong field ligand, \u0394o > P, which causes complete pairing of all 6 electrons into the lower t2g orbitals (t2g^6 eg^0). Therefore, the number of unpaired electrons is 0 (diamagnetic)."}, {"id": "n19", "exam": "NEET 2014", "topic": "Valence Bond Theory & Magnetic Nature", "text": "In the complex [Fe(H2O)6]3+, the hybridisation and magnetic nature of iron are:", "options": ["sp3d2 and strongly paramagnetic", "d2sp3 and diamagnetic", "sp3d2 and weakly paramagnetic", "dsp2 and diamagnetic"], "correct": 0, "explanation": "Fe(III) is a 3d5 system. H2O is a weak field ligand, so no electron pairing occurs. The five unpaired electrons remain in 3d, and the metal uses 4s, 4p, and 4d orbitals to form sp3d2 hybridisation. It has 5 unpaired electrons (strongly paramagnetic, \u03bc = 5.92 BM)."}, {"id": "n20", "exam": "NEET 2014", "topic": "Nomenclature & Biological Applications", "text": "Excess of toxic copper and iron ions in the human body can be chelated and removed by:", "options": ["D-penicillamine and desferrioxime B", "Cis-platin", "Zeise's salt", "Potassium ferricyanide"], "correct": 0, "explanation": "In chelate medicinal therapy, excess copper is removed using D-penicillamine, and excess iron is eliminated using desferrioxime B via the formation of soluble coordination complexes."}, {"id": "n21", "exam": "NEET 2013", "topic": "Valence Bond Theory & Magnetic Nature", "text": "A magnetic moment of 1.73 BM will be shown by which one of the following compounds?", "options": ["[Cu(NH3)4]2+", "[Ni(CN)4]2-", "[TiCl4]", "[CoCl6]3-"], "correct": 0, "explanation": "A spin-only magnetic moment of 1.73 BM corresponds to \u221a(1 \u00d7 3) = \u221a3 = 1.73 BM (exactly 1 unpaired electron). In [Cu(NH3)4]2+, Cu2+ is a 3d9 system, which contains exactly 1 unpaired electron."}, {"id": "n22", "exam": "NEET 2013", "topic": "Isomerism in Coordination Compounds", "text": "Which of the following complex ions will NOT show geometrical isomerism?", "options": ["[Co(NH3)4Cl2]+", "[Pt(NH3)2Cl2]", "[Co(en)3]3+", "[Co(en)2Cl2]+"], "correct": 2, "explanation": "[Co(en)3]3+ has three identical symmetrical bidentate ligands and belongs to the [M(AA)3] type. It shows optical isomerism (d and l forms), but cannot exhibit geometrical (cis/trans) isomerism because all positions are geometrically equivalent."}, {"id": "n23", "exam": "AIPMT 2010", "topic": "Crystal Field Theory & CFSE", "text": "Which of the following complex ions absorbs light of the shortest wavelength in the visible region?", "options": ["[Co(H2O)6]3+", "[Co(NH3)6]3+", "[Co(CN)6]3-", "[CoF6]3-"], "correct": 2, "explanation": "Energy of absorbed photon is inversely proportional to wavelength: E = hc / \u03bb. CN- is the strongest ligand and produces the largest crystal field splitting (\u0394o). A larger \u0394o requires higher energy and therefore absorbs the shortest wavelength (in fact in the ultraviolet region, ~310 nm)."}, {"id": "n24", "exam": "AIPMT 2005", "topic": "Isomerism in Coordination Compounds", "text": "The number of possible isomers for the complex [Co(en)2Cl2]Cl is:", "options": ["2", "3", "4", "1"], "correct": 1, "explanation": "[Co(en)2Cl2]+ has two geometrical isomers: cis and trans. The cis-isomer is chiral and exists as a pair of optical enantiomers (dextro and laevo). The trans-isomer is achiral. Hence, total isomers = 1 (trans) + 2 (cis d & l) = 3 isomers."}, {"id": "n25", "exam": "AIPMT 2000", "topic": "Werner's Theory & Valencies", "text": "In the coordination compound K4[Ni(CN)4], the oxidation state of nickel is:", "options": ["0", "+1", "+2", "-1"], "correct": 0, "explanation": "In K4[Ni(CN)4], let the oxidation state of Ni be x. 4(+1) + x + 4(-1) = 0 => 4 + x - 4 = 0 => x = 0."}];
+
+    // State Management
+    let currentMode = { kcet: 'doc', neet: 'doc' };
+    let showAnswerKey = { kcet: true, neet: true };
+    let activeFilter = { kcet: 'All', neet: 'All' };
+    let userSelections = {};
+
+    function showTab(tabName) {
+      document.getElementById('view-home').style.display = tabName === 'home' ? 'block' : 'none';
+      document.getElementById('view-kcet').style.display = tabName === 'kcet' ? 'block' : 'none';
+      document.getElementById('view-neet').style.display = tabName === 'neet' ? 'block' : 'none';
+      document.getElementById('view-notes').style.display = tabName === 'notes' ? 'block' : 'none';
+
+      document.querySelectorAll('.top-nav-btn').forEach(btn => btn.classList.remove('active'));
+      const activeBtn = document.getElementById('nav-' + tabName);
+      if (activeBtn) activeBtn.classList.add('active');
+
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function setMode(bank, mode) {
+      currentMode[bank] = mode;
+      document.getElementById(`${bank}-mode-doc`).classList.toggle('active', mode === 'doc');
+      document.getElementById(`${bank}-mode-quiz`).classList.toggle('active', mode === 'quiz');
+      renderBank(bank);
+    }
+
+    function toggleAnswers(bank) {
+      showAnswerKey[bank] = !showAnswerKey[bank];
+      const btn = document.getElementById(`${bank}-toggle-ans`);
+      btn.innerText = showAnswerKey[bank] ? 'Hide Answer Key' : 'Show Answer Key';
+      renderBank(bank);
+    }
+
+    function filterCategory(bank, cat, element) {
+      activeFilter[bank] = cat;
+      const pillsContainer = document.getElementById(`${bank}-pills`);
+      pillsContainer.querySelectorAll('.pill').forEach(p => {
+        p.classList.remove('active');
+        p.classList.remove('active-neet');
+      });
+      if (bank === 'kcet') element.classList.add('active');
+      else element.classList.add('active-neet');
+      renderBank(bank);
+    }
+
+    function filterList(bank) {
+      renderBank(bank);
+    }
+
+    function handleQuizSelect(bank, qId, selectedIdx, correctIdx) {
+      userSelections[qId] = selectedIdx;
+      renderBank(bank);
+    }
+
+    function renderBank(bank) {
+      const container = document.getElementById(`${bank}-questions-list`);
+      const dataset = bank === 'kcet' ? kcetData : neetData;
+      const searchVal = document.getElementById(`${bank}-search`).value.toLowerCase().trim();
+      const catVal = activeFilter[bank];
+      const mode = currentMode[bank];
+      const showAnswers = showAnswerKey[bank];
+
+      container.innerHTML = '';
+
+      let filtered = dataset.filter(q => {
+        const matchesCat = catVal === 'All' || q.topic === catVal;
+        const matchesSearch = !searchVal || 
+          q.text.toLowerCase().includes(searchVal) || 
+          q.topic.toLowerCase().includes(searchVal) ||
+          q.exam.toLowerCase().includes(searchVal);
+        return matchesCat && matchesSearch;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = '<div style="text-align:center; padding: 40px; color: #94a3b8;">No questions match your filter or search query.</div>';
+        return;
+      }
+
+      filtered.forEach((q, index) => {
+        const card = document.createElement('div');
+        card.className = 'q-card';
+        card.id = `card-${q.id}`;
+
+        const letters = ['A', 'B', 'C', 'D'];
+        const userChoice = userSelections[q.id];
+
+        let optionsHtml = q.options.map((opt, optIdx) => {
+          let extraClass = '';
+          if (mode === 'doc') {
+            if (showAnswers && optIdx === q.correct) extraClass = 'show-correct';
+          } else {
+            // Quiz Mode
+            if (userChoice !== undefined) {
+              if (optIdx === q.correct) extraClass = 'show-correct';
+              else if (userChoice === optIdx && optIdx !== q.correct) extraClass = 'selected-wrong';
+            }
+          }
+
+          const clickAttr = mode === 'quiz' ? `onclick="handleQuizSelect('${bank}', '${q.id}', ${optIdx}, ${q.correct})"` : '';
+
+          return `
+            <div class="option-item ${extraClass}" ${clickAttr}>
+              <span class="opt-letter">${letters[optIdx]}</span>
+              <span>${opt}</span>
+            </div>
+          `;
+        }).join('');
+
+        let solutionHtml = '';
+        const shouldShowSolution = (mode === 'doc' && showAnswers) || (mode === 'quiz' && userChoice !== undefined);
+
+        if (shouldShowSolution) {
+          solutionHtml = `
+            <div class="solution-box">
+              <div class="sol-header">Correct Answer: Option ${letters[q.correct]} • ${q.options[q.correct]}</div>
+              <div class="sol-text">${q.explanation}</div>
+            </div>
+          `;
+        }
+
+        const isNeet = bank === 'neet';
+
+        card.innerHTML = `
+          <div class="q-card-header">
+            <div class="q-id-badge">
+              <span class="q-num-box ${isNeet ? 'neet-bg' : ''}">Q${index + 1}</span>
+              <span class="q-exam-year">${q.exam}</span>
+            </div>
+            <span class="q-topic-tag ${isNeet ? 'neet-tag' : ''}">${q.topic}</span>
+          </div>
+          <div class="q-text">${q.text}</div>
+          <div class="options-wrap">
+            ${optionsHtml}
+          </div>
+          ${solutionHtml}
+        `;
+
+        container.appendChild(card);
+      });
+    }
+
+    // Initialize
+    document.addEventListener('DOMContentLoaded', () => {
+      renderBank('kcet');
+      renderBank('neet');
+    });
+  </script>
+</body>
+</html>
